@@ -1,4 +1,4 @@
-# lunison
+# :moon: lunison
 Secure, nightly file sync.
 
 - USB Hard Drive Encryption
