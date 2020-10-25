@@ -402,16 +402,16 @@ WantedBy=timers.target
 To interface with `systemctl`:
 
 #### Enable Service
-`systemctl enable nightly.service`
-`systemctl enable nightly.timer`
+- `systemctl enable nightly.service`
+- `systemctl enable nightly.timer`
 
 #### Schedule Service
-`systemctl start nightly.timer`
+- `systemctl start nightly.timer`
 
-### Check Status
-`systemctl status nightly`
-`systemctl list-unit-files`
+#### Check Status
+- `systemctl status nightly`
+- `systemctl list-unit-files`
 
-### Manually Start and Stop Service
-`systemctl start nightly.service`
-`systemctl stop nightly.service`
+#### Manually Start and Stop Service
+- `systemctl start nightly.service`
+- `systemctl stop nightly.service`
