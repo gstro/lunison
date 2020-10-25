@@ -1,0 +1,11 @@
+[Unit]
+Description=Run all nightly tasks
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/home/pi/scripts/nightly.py
+User=pi
+
+[Install]
+WantedBy=multi-user.target

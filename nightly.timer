@@ -1,0 +1,17 @@
+[Unit]
+Description=Schedule for nightly tasks
+RefuseManualStart=no        # Allow manual starts
+RefuseManualStop=no         # Allow manual stops
+
+[Timer]
+# Execute job if it missed a run due to machine being off
+Persistent=true
+# Run 5 min after boot for the first time
+OnBootSec=5min
+# Run every day at midnight
+OnCalendar=daily
+# File describing job to execute
+Unit=nightly.service
+
+[Install]
+WantedBy=timers.target
